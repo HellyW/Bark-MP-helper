@@ -6,9 +6,9 @@ Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录
 > 服务器端 <https://github.com/Finb/go-tools> <br>
 > AppStore <https://itunes.apple.com/cn/app/bark-customed-notifications/id1403753865> <br>
 ## 写在前面
-> 感谢Finb/Bark的软件支撑，Bark是一款很好的消息推送软件，改变了原来通过手机短信或邮件推送即时获取消息的方式。
-> Bark助手小程序的开发初衷是为了实现推送记录的管理。方便浏览不慎关闭的推送信息和过往的历史推送数据。
-> 在用户和Finb/Bark中间架设了一层服务，服务会存储用户推送的数据（用户删除后会永久从服务器删除），间隔时间过久的数据也会被程序主动删除。
+> 感谢Finb/Bark的软件支撑，Bark是一款很好的消息推送软件，改变了原来通过手机短信或邮件推送即时获取消息的方式。<br>
+> Bark助手小程序的开发初衷是为了实现推送记录的管理。方便浏览不慎关闭的推送信息和过往的历史推送数据。<br>
+> 在用户和Finb/Bark中间架设了一层服务，服务会存储用户推送的数据（用户删除后会永久从服务器删除），间隔时间过久的数据也会被程序主动删除。<br>
 ## 使用说明
 1. 微信搜索“Bark助手” 或扫描下方小程序码<br>
 ![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_38cb1ca0be75_344.jpg)<br>

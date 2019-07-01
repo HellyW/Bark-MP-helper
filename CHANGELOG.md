@@ -21,7 +21,7 @@
 3. 允许一键阅读
 #### 授权管理
 > 演示流程<br />
-<img src="https://github.com/wahao/Bark-MP-helper/blob/master/images/IMG_1669.gif" width = "40%" /><br />
+<img src="https://github.com/wahao/Bark-MP-helper/blob/master/images/IMG_1669.GIF" width = "40%" /><br />
 > 😆 视频转Gif  有点糊了；  gif中最后的推送是有第三方小程序在授权成功后发起的 <br />
 1. 允许更多小程序通过授权方式接入，支持其他开发者通过接口向用户推送信息 [ 已实现， 暂未开放 ] <br />
 2. 允许用户对授权推送应用进行管理 [ 免打扰（接收推送，但不通过Bark推送； 只在小程序内查看）， 解绑（不接收该应用推送） ]

@@ -38,6 +38,8 @@ URL 组成: 第一个部分是 key , 之后有两个匹配
 ```
 包括url、automaticallyCopy、copy 均同Bark软件
 ```
+## 更新日志
+[CHANGELOG](https://github.com/wahao/Bark-MP-helper/blob/master/CHANGELOG.md)
 ## 写在最后
 > 如果您有更多更好的意见或建议，可以通过提issue的方式告诉我。
 ## 小程序推荐

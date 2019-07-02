@@ -17,11 +17,11 @@ Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录
 ## 功能清单
 1. 支持api推送 ， 接口格式同Bark api接口<br>
 2. 支持历史记录查看（目前仅前50条推送，后期会扩展）<br>
-3. 允许其他小程序通过授权方式向您的Bark推送消息 [即将开放]<br>
+3. 允许其他小程序通过授权方式向您的Bark推送消息 <br>
 4. 管理授权应用及推送能力<br>
 5. 文本过滤；涉及违法违规的文本推送将会被拦截<br>
 ## 接口文档
-### 其他小程序授权接入Bark助手帮助文档 [即将开放]
+
 ### 普通用户api推送
 #### 发送推送
 > 详情可见小程序内接口一项
@@ -38,6 +38,61 @@ URL 组成: 第一个部分是 key , 之后有两个匹配
 ```
 包括url、automaticallyCopy、copy 均同Bark软件
 ```
+
+### 其他小程序授权接入Bark助手帮助文档 
+#### 1. 接入
+> 添加至app.json
+```javascript
+    "navigateToMiniProgramAppIdList":["wx74db71d8a9e3b699"]
+```
+> 微信小程序代码内跳转至授权页
+```javascript
+  wx.navigateToMiniProgram({
+    appId: 'wx74db71d8a9e3b699',
+    path: '/pages/bind/app',
+    extraData: {
+      appName: 'Bark Helper',    // 必填，修改为您当前小程序名称
+      openid: ''    // 必填，修改为当前用户的openid
+    },
+    envVersion: 'release',
+    success(res) {
+      // 打开成功
+    }
+  })
+```
+- 请填写真实有效的openid，以便于调用接口对指定用户发放。虚假的openid将导致信息发送错乱
+
+> 接收授权结果 <br />
+用户授权成功或失败后，Bark助手都将返回源小程序 <br />
+您需要在`App.onLaunch`或`App.onShow`监听来自`appId: 'wx74db71d8a9e3b699'`的`extraData`数据<br >
+数据格式为：<br />
+```javascript
+  "extraData":{
+    "key":"",   //app的授权key
+    "bind":true,   //绑定状态 Boolean
+    "errMsg":""   //错误信息 bind为false是会返回
+  }
+```
+建议在`App.onShow`内监听<br />
+```javascript
+  onShow(event){
+    if(event && event.referrerInfo && event.referrerInfo.appId === 'wx74db71d8a9e3b699'){
+      const _extraData = ( event && event.referrerInfo && event.referrerInfo.extraData ) || {}
+      if(_extraData.bind){
+        //绑定成功
+        console.log(_extraData.key)
+      }else{
+        //绑定失败
+        console.log(_extraData.errMsg)
+      }
+    }
+  }
+```
+当bind为true时，表示授权成功<br />
+#### 2. 推送消息
+> 暂不支持群发
+[API](https://github.com/wahao/Bark-MP-helper/blob/master/docs/api.md)
+
 ## 更新日志
 [CHANGELOG](https://github.com/wahao/Bark-MP-helper/blob/master/CHANGELOG.md)
 ## 写在最后

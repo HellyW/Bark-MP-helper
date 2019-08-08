@@ -2,10 +2,11 @@
 
 > 微信扫一扫 快速体验<br />
 ![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_38cb1ca0be75_344.jpg)<br>
-## 设计版本
+## 升级计划
 ### v1.1.0
 1. 更新UI： 支持消息分类 ； 允许一键清空、一键已读
 2. 开放邀请部分个人小程序授权接入 ； 提高这一版本授权管理的稳定性
+3. 允许绑定私有服务器key
 ```
 更多待补充，欢迎在issue内提出您的建议
 ```

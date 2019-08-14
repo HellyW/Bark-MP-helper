@@ -1,5 +1,5 @@
 # Bark-MP-helper
-<del> Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录和查看 </del>
+<del> Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录和查看 </del><br>
 Bark-MP-helper 是微信小程序端Bark插件，同时扩展邮箱及微信推送，实现聚合推送能力。支持历史推送数据的记录和查看功能
 > Bark是什么？<br>
 > Bark is an iOS App which allows you to push customed notifications to your iPhone <br>

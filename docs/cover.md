@@ -1,5 +1,5 @@
 
-<img width="100" height="100" src="images/WechatIMG998.gif"/><br/>
+![logo](./images/WechatIMG998.gif)
 
 # Bark assistant 
 

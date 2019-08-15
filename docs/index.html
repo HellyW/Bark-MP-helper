@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      coverpage: ['/', '/zh-cn/'],
+      loadNavbar: true,
+      copyCode: {
+        buttonText: {
+          '/zh-cn/': '点击复制',
+          '/'      : 'Copy to clipboard'
+        },
+        errorText: {
+          '/zh-cn/': '错误',
+          '/'      : 'Error'
+        },
+        successText: {
+          '/zh-cn/': '复制成功',
+          '/'      : 'Copied'
+        }
+      },
+      repo: 'https://github.com/wahao/Bark-MP-helper'
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="//unpkg.com/prismjs/components/prism-http.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-json.js"></script>
+</body>
+</html>

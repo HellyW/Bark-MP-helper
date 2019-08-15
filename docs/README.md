@@ -3,7 +3,7 @@
 
 ## install
 Wechat searches for "Bark助手" or scans the miniprogram code below<br>
-  ![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_38cb1ca0be75_344.jpg)
+  ![Snap](./images/gh_38cb1ca0be75_344.jpg)
 
 ## Binding social accounts
 

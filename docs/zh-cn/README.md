@@ -3,7 +3,7 @@
 
 ## 安装
 微信搜索“Bark助手” 或扫描下方小程序码<br>
-  ![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_38cb1ca0be75_344.jpg)
+  ![Snap](../images/gh_38cb1ca0be75_344.jpg)
 
 ## 绑定社交账号
 

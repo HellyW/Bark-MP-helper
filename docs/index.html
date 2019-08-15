@@ -13,7 +13,10 @@
   <script>
     window.$docsify = {
       name: '',
-      coverpage: ['/', '/zh-cn/'],
+      coverpage: {
+        '/': 'cover.md',
+        '/zh-cn/': 'cover.md'
+      },
       loadNavbar: 'navbar.md',
       copyCode: {
         buttonText: {

@@ -97,7 +97,7 @@ wechat=1 ： 使用微信模板消息推送
 [API](https://github.com/wahao/Bark-MP-helper/blob/master/docs/api.md)
 
 ## 更新日志
-[CHANGELOG](https://github.com/wahao/Bark-MP-helper/blob/master/CHANGELOG.md)
+[CHANGELOG](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=%e5%8d%87%e7%ba%a7%e6%97%a5%e5%bf%97)
 ## 写在最后
 > 如果您有更多更好的意见或建议，可以通过提issue的方式告诉我。
 ## 小程序推荐

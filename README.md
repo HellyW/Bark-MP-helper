@@ -1,4 +1,5 @@
 # Bark-MP-helper
+文档 ： [中文](https://wahao.github.io/Bark-MP-helper/#/zh-cn/) | [English](https://wahao.github.io/Bark-MP-helper/#/)
 <del> Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录和查看 </del><br>
 Bark-MP-helper 是微信小程序端Bark插件，同时扩展邮箱及微信推送，实现聚合推送能力。支持历史推送数据的记录和查看功能
 > Bark是什么？<br>
@@ -24,6 +25,7 @@ Bark-MP-helper 是微信小程序端Bark插件，同时扩展邮箱及微信推�
 ## 接口文档
 
 ### 普通用户api推送
+[如何发送请求](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=接口)
 #### 发送推送
 > 详情可见小程序内接口一项
 ```
@@ -43,6 +45,7 @@ wechat=1 ： 使用微信模板消息推送
 ```
 
 ### 其他小程序授权接入Bark助手帮助文档 
+[小程序侧如何接入](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=微信小程序)
 #### 1. 接入
 > 添加至app.json
 ```javascript
@@ -94,7 +97,7 @@ wechat=1 ： 使用微信模板消息推送
 当bind为true时，表示授权成功<br />
 #### 2. 推送消息
 > 暂不支持群发
-[API](https://github.com/wahao/Bark-MP-helper/blob/master/docs/api.md)
+[服务端请求接口文档](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=服务端)
 
 ## 更新日志
 [CHANGELOG](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=%e5%8d%87%e7%ba%a7%e6%97%a5%e5%bf%97)

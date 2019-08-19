@@ -306,6 +306,10 @@ now，binding was successful. The server can send push messages to the user thro
 
 # CHANGE_LOGS
 
+## v1.0.5 (2019-08-19)
+
+* Added "Small Transmitter" (Custom Request Simulated Push)
+
 ## v1.0.4.1 (2019-08-15)
 
 * Open third party access API

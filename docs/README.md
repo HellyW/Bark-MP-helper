@@ -306,6 +306,10 @@ now，binding was successful. The server can send push messages to the user thro
 
 # CHANGE_LOGS
 
+## v1.0.6 (2019-08-20)
+
+* Push with link support opens link in the miniprogram  🎉🎉🎉🎉🎉🎉🎉🎉🎉
+
 ## v1.0.5 (2019-08-19)
 
 * Added "Small Transmitter" (Custom Request Simulated Push)

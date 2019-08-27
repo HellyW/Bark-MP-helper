@@ -306,6 +306,10 @@ now，binding was successful. The server can send push messages to the user thro
 
 # CHANGE_LOGS
 
+## v1.0.6.1 (2019-08-27)
+
+* Fixed a bug that could not receive Wechat push when unbound bark and mailbox were not bound.
+
 ## v1.0.6 (2019-08-20)
 
 * Push with link support opens link in the miniprogram  🎉🎉🎉🎉🎉🎉🎉🎉🎉

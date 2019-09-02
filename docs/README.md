@@ -306,6 +306,17 @@ now，binding was successful. The server can send push messages to the user thro
 
 # CHANGE_LOGS
 
+
+## v1.0.6.5 (2019-09-02)
+
+* Optimized interface and time display
+* Optimize the friendly hints of Wechat push failure (inform by other means, push failure results)
+* Optimized Mail Display Style
+
+## v1.0.6.1 (2019-08-30)
+
+* Fixed a bug that could not receive Wechat push when unbound bark and mailbox were not bound.
+
 ## v1.0.6.1 (2019-08-27)
 
 * Fixed a bug that could not receive Wechat push when unbound bark and mailbox were not bound.

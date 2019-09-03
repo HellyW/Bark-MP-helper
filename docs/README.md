@@ -312,6 +312,7 @@ now，binding was successful. The server can send push messages to the user thro
 * Optimized interface and time display
 * Optimize the friendly hints of Wechat push failure (inform by other means, push failure results)
 * Optimized Mail Display Style
+* Fixed bug that failed to load the data request on the history page
 
 ## v1.0.6.1 (2019-08-30)
 

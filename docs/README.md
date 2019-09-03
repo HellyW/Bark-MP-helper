@@ -309,6 +309,11 @@ now，binding was successful. The server can send push messages to the user thro
 
 > Version design, the latest version is detailed in the latest version in the upgrade log. The large version of the idea will be implemented iteratively in smaller versions.
 
+
+
+## v1.1.0 
+
+
 * ~~ Support message paging query, browse all messages (v1.0.2 implementation)~~
 * Support message classification, search and query function [scheduling]
 * ~~ Add multiple push modes (v1.0.3, v1.0.4 to realize mailbox and wechat push)~~

@@ -317,12 +317,19 @@ now，binding was successful. The server can send push messages to the user thro
 * ~~ Support message paging query, browse all messages (v1.0.2 implementation)~~
 * Support message classification, search and query function [scheduling]
 * ~~ Add multiple push modes (v1.0.3, v1.0.4 to realize mailbox and wechat push)~~
-* Allow modification of key value in API to protect propagation privacy
+* ~~ Allow modification of key value in API to protect propagation privacy (v1.0.7 implementation)~~
 * Allow binding to bark build-in server key value [in evaluation]
+* Allow the creation of temporary receive API interfaces [in evaluation]
 
 
 
 # CHANGE_LOGS
+
+## v1.0.7 (2019-09-12)
+
+* Add temporary link function, cancel at any time, protect privacy. Don't worry about the push interface being abused anymore ~~
+
+> Entry: My > Experimental Functions > Temporary Links
 
 
 ## v1.0.6.5 (2019-09-02)

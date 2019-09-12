@@ -317,9 +317,9 @@ now，binding was successful. The server can send push messages to the user thro
 * ~~ Support message paging query, browse all messages (v1.0.2 implementation)~~
 * Support message classification, search and query function [scheduling]
 * ~~ Add multiple push modes (v1.0.3, v1.0.4 to realize mailbox and wechat push)~~
-* ~~ Allow modification of key value in API to protect propagation privacy (v1.0.7 implementation)~~
+* ~~ Allow modification of key value in API to protect propagation privacy （discard,recommended to use temporary links） ~~
 * Allow binding to bark build-in server key value [in evaluation]
-* Allow the creation of temporary receive API interfaces [in evaluation]
+* ~~ Allow the creation of temporary receive API interfaces [in evaluation]  (v1.0.7 implementation)~~
 
 
 

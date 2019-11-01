@@ -1,4 +1,8 @@
 # quick start :id=quick-start
+
+The applet aggregates APP, email, and WeChat, and one line of code is easily pushed. At the same time, support the ability to view historical push records, subscribe to third-party push, generate temporary push links, etc.<br>
+
+
 > This part of the document is for ordinary users
 
 ## install
@@ -91,6 +95,28 @@ wechat： use wechat push `wechat=1` <br >
 * Close reminder: It will not be pushed through Bark or email, but it will still be recorded in Bark's assistant history. Ready to view
 
 * Unauthorization: Authorized applications will not be able to push you information
+
+
+# utools plug-in
+
+To make it easier for computer clients to push messages to their phones, we've developed a plug-in version of bark assistant for the utools platform.
+You can experience it in the following ways.
+
+## Download and install utools
+
+Download address: https://u.tools/download.html < br >
+
+Documentation: https://u.tools/docs/guide/about-uTools.html < br >
+
+> supports MACOS, WINDOWS, LINUX platforms <br>
+
+## Install the Bark helper plug-in
+
+Exhale utools (Option + Space, Alt + Space) and select <br> in the plug-in center
+
+## Use
+
+Exhale utools (Option + Space, Alt + Space) input 'push', 'bark', 'push' quickly enter <br>
 
 
 # Developer Access

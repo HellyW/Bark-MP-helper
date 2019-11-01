@@ -1,4 +1,7 @@
 # 快速开始 :id=quick-start
+
+该小程序将APP、邮箱、微信推送进行聚合，一行代码轻松实现推送。同时支持查看历史推送记录、订阅第三方推送、生成临时推送链接等能力<br>
+
 > 该部分文档面向普通使用者
 
 ## 安装
@@ -92,6 +95,25 @@ wechat： 指定微信发送 `wechat=1` <br >
 
 * 取消授权：授权应用将无法向您推送信息
 
+# utools插件
+
+为方便电脑客户端向手机推送消息，我们开发了utools平台的bark助手插件版。您可以通过以下方式体验。
+
+## 下载安装utools
+
+下载地址 ： https://u.tools/download.html <br>
+
+说明文档 ： https://u.tools/docs/guide/about-uTools.html <br>
+
+> 支持 MACOS、WINDOWS、LINUX 平台 <br>
+
+## 安装Bark助手插件 
+
+ 呼出utools （ Option + Space 、 Alt + Space ）在插件中心选择 <br>
+
+## 使用 
+
+呼出utools （ Option + Space 、 Alt + Space ） 输入 `push`、`bark`、`推送` 快速进入 <br>
 
 # 开发者接入
 > 该部分文档可帮助开发者快速接入Bark助手推送平台

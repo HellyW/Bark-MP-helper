@@ -415,3 +415,7 @@ wechat： 指定微信发送 `wechat=1` <br >
 
 * 首发
 
+# 其他文档
+
+* [另辟蹊径：离开模板消息，如何更优雅的向用户推送消息](https://developers.weixin.qq.com/community/develop/article/doc/000c06a47243a80aa7c8541e95b413)
+

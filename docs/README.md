@@ -425,3 +425,9 @@ now，binding was successful. The server can send push messages to the user thro
 ## v1.0.0 (2019-06-30) 🚩
 
 * Initial
+
+
+# RELATED DOCUMENTS
+
+* [另辟蹊径：离开模板消息，如何更优雅的向用户推送消息](https://developers.weixin.qq.com/community/develop/article/doc/000c06a47243a80aa7c8541e95b413)
+

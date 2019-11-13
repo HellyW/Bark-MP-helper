@@ -41,12 +41,20 @@ Wechat searches for "Bark助手" or scans the miniprogram code below<br>
 > Support GET, POST 
 
 ```
-/:key/:body 
-/:key/:title/:body 
+/:key
+/:key/:content 
+/:key/:title/:content 
 ```
 !> The key and host here are not key values provided in the bark
 
 ### params
+
+> POST parameter
+
+* title: the title will be displayed above the text < br >
+* content: body < br >
+
+!> the above parameters have a high priority. As a post request, the parameters in the URL will be overwritten The following parameters can also be called as post intrinsic parameters.
 
 > base
 

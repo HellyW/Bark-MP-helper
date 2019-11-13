@@ -40,12 +40,21 @@
 > 支持GET、POST请求
 
 ```
-/:key/:body 
-/:key/:title/:body 
+/:key
+/:key/:content 
+/:key/:title/:content 
 ```
+
 !> 此处的key及host 并非bark内提供的key值
 
 ### 参数
+
+> POST参数
+
+* title：标题  会显示在正文上方 <br >
+* content： 正文 <br >
+
+!> 以上参数优先级高，作为post请求会覆盖url内参数。 以下参数也可作为post内参数调用。
 
 > 基础参数
 

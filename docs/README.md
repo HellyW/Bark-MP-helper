@@ -11,6 +11,13 @@ Wechat searches for "Bark助手" or scans the miniprogram code below<br>
 
 ## Binding social accounts
 
+
+### How to bind
+
+> Go to my > push management > bind bar / bind mailbox / bind wechat < br >
+
+ ![Snap](./images/bind.png)
+
 ### Bark
 > Self-built servers are not supported for the time being
 
@@ -19,12 +26,18 @@ Wechat searches for "Bark助手" or scans the miniprogram code below<br>
 3. Click on Binding to receive Binding Confirmation Push
 4. Push information to complete binding
 
+ ![Snap](./images/bindBark.png)
+
 ### E-mail
 > It is suggested that `push@hellyw.com`、`wahao93@163.com` add to the whitelist or VIP list to avoid failing to receive mail messages
+
+!> after binding the mailbox successfully, there will be page stroboscopic phenomenon. Please directly exit and delete the applet and re-enter This issue will be fixed in version 1.0.7.3
 
 1. Open Bark, enter the widget mailbox binding page, and enter the mailbox address (the software will automatically identify and paste)
 2. Click on Binding to receive Binding Confirmation Mail (no white list added, possibly in spam)
 3. Click on the email `详情` to complete the binding
+
+ ![Snap](./images/bindEmail.png)
 
 ### Wechat
 > default :  `off` <br >

@@ -31,7 +31,7 @@ Wechat searches for "Bark助手" or scans the miniprogram code below<br>
 ### E-mail
 > It is suggested that `push@hellyw.com`、`wahao93@163.com` add to the whitelist or VIP list to avoid failing to receive mail messages
 
-!> after binding the mailbox successfully, there will be page stroboscopic phenomenon. Please directly exit and delete the applet and re-enter This issue will be fixed in version 1.0.7.3
+!> after binding the mailbox successfully, there will be page stroboscopic phenomenon. Please directly exit and delete the applet and re-enter This issue has be fixed in version 1.0.7.3
 
 1. Open Bark, enter the widget mailbox binding page, and enter the mailbox address (the software will automatically identify and paste)
 2. Click on Binding to receive Binding Confirmation Mail (no white list added, possibly in spam)
@@ -356,10 +356,11 @@ now，binding was successful. The server can send push messages to the user thro
 
 > Version design, the latest version is detailed in the latest version in the upgrade log. The large version of the idea will be implemented iteratively in smaller versions.
 
-
+> The upgrade log and plan of the plug-in version of utools and other platforms will also be synchronized here, and the version number will be shared.
 
 ## v1.1.0 
 
+### miniProgram
 
 * ~~ Support message paging query, browse all messages (v1.0.2 implementation)~~
 * Support message classification, search and query function [scheduling]
@@ -367,10 +368,27 @@ now，binding was successful. The server can send push messages to the user thro
 * ~~ Allow modification of key value in API to protect propagation privacy （discard,recommended to use temporary links） ~~
 * Allow binding to bark build-in server key value [in evaluation]
 * ~~ Allow the creation of temporary receive API interfaces [in evaluation]  (v1.0.7 implementation)~~
+* Allow unbound mailbox, bark (will be supported in version 1.0.8)
+* Allow custom push order (will be supported in version 1.0.8)
+* Push access wechat service number (will be supported in version 1.0.9)
 
+### uTools Plugin
+
+* Rewrite page UI (return to 1.0.7 series version number upgrade)
+* Support to modify and manage contacts (return to 1.0.7 series version number upgrade)
 
 
 # CHANGE_LOGS
+
+## v1.0.7.3 (2019-11-16)
+
+
+* Fixed the problem of binding the flash of mailbox page
+* The push logic code is rewritten, and the custom push receive order is supported. Page function will be implemented in version 1.0.8
+
+## v1.0.7.2.1 (2019-11-01)
+
+* uTools Plugin Release「1.0.1」
 
 ## v1.0.7 (2019-09-12)
 

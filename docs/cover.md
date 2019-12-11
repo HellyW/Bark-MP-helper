@@ -11,3 +11,5 @@
 
 [GitHub](https://github.com/wahao/Bark-MP-helper)
 [Get Started](#quick-start)
+[Mac 下载](#iGot-client)
+[windows 下载](#iGot-client)

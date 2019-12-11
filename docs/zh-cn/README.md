@@ -368,7 +368,7 @@ wechat： 指定微信发送 `wechat=1` <br >
 
 ```
   POST
-  /fsend/?openid=OPENID&access_token=ACCESS_TOKEN
+  /fsend/?access_token=ACCESS_TOKEN
 
 ```
 

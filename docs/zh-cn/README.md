@@ -700,6 +700,83 @@ wechat： 指定微信发送 `wechat=1` <br >
 ```
 
 
+#### 群发链接服务创建
+
+
+```
+  POST
+  /link/group
+
+```
+
+```json
+{
+  "name": "北京明日雾霾状况提醒",  // 服务名 ， 必填
+  "open": true  //  是否开放关注 ， 选填   默认 false
+}
+```
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+    "key": "5df30a5c55df6a63fa4273e7"   //  推送key
+  },
+  "errMsg": "success"  // 错误详情
+}
+```
+
+
+#### 获取已创建的群发链接服务
+
+
+```
+  GET
+  /link/group?token=token&index=1&size=20
+
+```
+
+```json
+{
+  "ret": 0,   // 0 为正确响应; 请求响应状态字
+  "data": {
+    "links": [{
+      "key": "5df30a5055df6a63fa4273e5",   //  推送 key
+      "name": "「 测试 」服务",   //  服务名
+      "subscribe": "https://push.hellyw.com/static/link/GL_952264701d5b11eab4c3e551cb1ff61b.png"   // 关注二维码
+    }],
+    "count": 1
+  },
+  "errMsg": "success"  // 错误详情
+}
+```
+
+
+#### 获取所有开放的群推链接
+
+
+```
+  GET
+  /link/group/market?token=token&index=1&size=20
+
+```
+
+```json
+{
+  "ret": 0,   // 0 为正确响应; 请求响应状态字
+  "data": {
+    "links": [{
+      "name": "「 测试 」服务",   //  服务名
+      "subscribe": "https://push.hellyw.com/static/link/GL_952264701d5b11eab4c3e551cb1ff61b.png"   // 关注二维码
+    }],
+    "count": 1
+  },
+  "errMsg": "success"  // 错误详情
+}
+```
+
+
+
 
 
 

@@ -776,6 +776,137 @@ wechat： 指定微信发送 `wechat=1` <br >
 ```
 
 
+#### 获取推送方式及推送顺序
+
+
+```
+  GET
+  /push-way/?token=token
+
+```
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+    "pushWay": {
+      "bark": {    //  bark 推送详情
+        "key": "F8Q****vue",  //  bark key
+        "status": 2  //  绑定状态    0 - 未绑定  1 - 已绑定未验证   2 - 已绑定已验证
+      },
+      "email": {  //  邮件推送详情
+        "key": "he****@hellyw.com",  //  邮件地址
+        "status": 2  //  绑定状态    0 - 未绑定  1 - 已绑定未验证   2 - 已绑定已验证
+      },
+      "wechat": {  //  微信公众号推送方式
+        "key": "",    //  微信设备号
+        "status": 0  //  绑定状态    0 - 未绑定  1 - 已绑定未验证   2 - 已绑定已验证
+      },
+      "orders": ["bark", "email", "wechat"]   //  对应上方推送方式  依次为按照 bark 、 邮箱、 微信公众号  逐一尝试推送
+    }
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+#### 修改推送顺序
+
+
+```
+  POST
+  /push-way/orders?token=token
+
+```
+
+```json
+{
+  "orders": ["email", "bark", "wechat"] // 新的推送顺序
+}
+```
+
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+#### 绑定新的推送方式
+
+> 仅允许 对应status 为 0 状态下发起   为 1、2 的时候请先引导用户完成解绑
+
+```
+  POST
+  /push-way/bark/bind?token=token
+  /push-way/email/bind?token=token
+```
+> 微信绑定方式暂不开放
+
+```json
+{
+  "key": "wjdnjh2qwe23"  // 地址详情  bark为key  email 为邮箱地址
+}
+```
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+
+#### 解除绑定推送方式
+
+> 仅允许 对应status 为 1 、 2 状态下发起   为 0 的时候请先引导用户完成绑定
+
+```
+  POST
+  /push-way/bark/unbind?token=token
+  /push-way/email/unbind?token=token
+```
+> 微信解绑方式暂不开放
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+
+#### 重新验证推送方式
+
+> 仅允许 对应status 为 1 状态下发起   为 0 的时候请先引导用户完成绑定
+
+```
+  POST
+  /push-way/bark/verify?token=token
+  /push-way/email/verify?token=token
+```
+> 微信验证方式暂不开放
+
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+
+
+
+
 
 
 

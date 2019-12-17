@@ -843,13 +843,32 @@ wechat： 指定微信发送 `wechat=1` <br >
   /push-way/bark/bind?token=token
   /push-way/email/bind?token=token
 ```
-> 微信绑定方式暂不开放
+> 微信绑定方式请使用专用接口实现
 
 ```json
 {
   "key": "wjdnjh2qwe23"  // 地址详情  bark为key  email 为邮箱地址
 }
 ```
+
+```json
+{
+  "ret": 0,  // 0 为正确响应; 请求响应状态字
+  "data": {
+  },
+  "errMsg": "success"   // 错误详情
+}
+```
+
+#### 绑定微信公众号推送
+
+> 仅允许 对应status 为 0 状态下发起   为 1、2 的时候请先引导用户完成解绑
+
+```
+  GET
+  /push-way/wechat/bind?token=token
+```
+
 
 ```json
 {
@@ -869,8 +888,8 @@ wechat： 指定微信发送 `wechat=1` <br >
   POST
   /push-way/bark/unbind?token=token
   /push-way/email/unbind?token=token
+  /push-way/wechat/unbind?token=token
 ```
-> 微信解绑方式暂不开放
 
 ```json
 {
@@ -891,7 +910,7 @@ wechat： 指定微信发送 `wechat=1` <br >
   /push-way/bark/verify?token=token
   /push-way/email/verify?token=token
 ```
-> 微信验证方式暂不开放
+> 微信无需单独处理验证
 
 
 ```json

@@ -174,13 +174,15 @@
 
 ## 下载
 
-![Snap](../images/qqGroup.jpeg)
+参与内测请扫码加入QQ群
+
+![Snap](../images/WechatIMG1272.jpeg)
 
 ### Mac 客户端
 
 网盘下载：[点击下载](https://pan.baidu.com/s/1rAiqPOeu6-Bt_7d8qTeEtQ)
 
-参与内测请扫码加入QQ群
+
 
 
 ### windows 客户端
@@ -544,6 +546,8 @@
 > 您需要引导用户获取随机验证码。 获取方式为 <br />
 
 * 1. 扫描下方固定小程序码
+
+![Snap](../images/login.png)
 
 * 2. 打开小程序，依次选择“我的” >> “实验性功能” >> “他端登录”
 

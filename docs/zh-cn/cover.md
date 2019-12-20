@@ -1,7 +1,7 @@
 
 <img width="100" height="100" src="images/WechatIMG998.gif"/><br/>
 
-# Bark 助手 
+# iGot聚合推送
 
 > 一款聚合消息推送管理工具
 

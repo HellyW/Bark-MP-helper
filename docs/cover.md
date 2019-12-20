@@ -1,7 +1,7 @@
 
 <img width="100" height="100" src="images/WechatIMG998.gif"/><br/>
 
-# Bark assistant 
+# iGot
 
 > A polymerization message push management tool
 

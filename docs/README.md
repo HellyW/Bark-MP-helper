@@ -6,7 +6,7 @@ The applet aggregates APP, email, and WeChat, and one line of code is easily pus
 > This part of the document is for ordinary users
 
 ## install
-Wechat searches for "Bark助手" or scans the miniprogram code below<br>
+Wechat searches for "iGot" or scans the miniprogram code below<br>
   ![Snap](./images/gh_38cb1ca0be75_344.jpg)
 
 ## Binding social accounts

@@ -4,11 +4,6 @@
 
 * 一款开放式的消息推送管理平台。 
 
-[iGot开放接口](https://wahao.github.io/Bark-MP-helper/#/zh-cn/)提供。
-
-> iGot客户端是基于[iGot小程序](https://github.com/wahao/Bark-MP-helper)衍生的桌面客户端项目。您可以通过iGot轻松管理消息和您的推送方式。通过一行代码请求您就可以自定义向自己或项目组成员推送相关信息。
->
-
 ## 帮助文档
 
 [中文](https://wahao.github.io/Bark-MP-helper/#/zh-cn/) | [English](https://wahao.github.io/Bark-MP-helper/)

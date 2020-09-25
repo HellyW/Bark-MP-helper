@@ -1,109 +1,43 @@
-# Bark-MP-helper
-文档 ： [中文](https://wahao.github.io/Bark-MP-helper/#/zh-cn/) | [English](https://wahao.github.io/Bark-MP-helper/#/) <br>
-<del> Bark-MP-helper 是微信小程序端Bark插件，实现Bark推送历史的记录和查看 </del><br>
-Bark-MP-helper 是微信小程序端Bark插件，同时扩展邮箱及微信推送，实现聚合推送能力。支持历史推送数据的记录和查看功能
-> Bark是什么？<br>
-> Bark is an iOS App which allows you to push customed notifications to your iPhone <br>
-> 客户端 <https://github.com/Finb/Bark> <br>
-> 服务器端 <https://github.com/Finb/go-tools> <br>
-> AppStore <https://itunes.apple.com/cn/app/bark-customed-notifications/id1403753865> <br>
-## 写在前面
-> 感谢Finb/Bark的软件支撑，Bark是一款很好的消息推送软件，改变了原来通过手机短信或邮件推送即时获取消息的方式。<br>
-> Bark助手小程序的开发初衷是为了实现推送记录的管理。方便浏览不慎关闭的推送信息和过往的历史推送数据。<br>
-> 在用户和Finb/Bark中间架设了一层服务，服务会存储用户推送的数据（用户删除后会永久从服务器删除）<br>
-## 使用说明
-1. 微信搜索“Bark助手” 或扫描下方小程序码<br>
-![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_38cb1ca0be75_344.jpg)<br>
-2. 复制bark内推送链接或bark推送key 进入小程序， 按提示绑定bark<br>
-3. 点击绑定后，会收到确认绑定的推送信息，点开完成绑定
-## 功能清单
-1. 支持api推送 ， 接口格式同Bark api接口<br>
-2. 支持历史记录查看<br>
-3. 允许其他小程序通过授权方式向您的Bark推送消息 <br>
-4. 管理授权应用及推送能力<br>
-5. 文本过滤；涉及违法违规的文本推送将会被拦截<br>
-## 接口文档
+<img src="images/logo.png" alt="logo" height="120" align="right" />
 
-### 普通用户api推送
-[如何发送请求](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=接口)
-#### 发送推送
-> 详情可见小程序内接口一项
-```
-可以发 get 或者 post 请求 ，请求成功会立即收到推送 
+# iGot
 
-URL 组成: 第一个部分是 key , 之后有两个匹配 
-/:key/:body 
-/:key/:title/:body 
+* 一款开放式的消息推送管理平台。 
 
-此处的key值及host 非Bark软件内host及key
-```
-#### 其他参数
-```
-包括url、automaticallyCopy、copy 均同Bark软件
-新增适用于微信的参数 wechat
-wechat=1 ： 使用微信模板消息推送
-```
+[iGot开放接口](https://wahao.github.io/Bark-MP-helper/#/zh-cn/)提供。
 
-### 其他小程序授权接入Bark助手帮助文档 
-[小程序侧如何接入](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=微信小程序)
-#### 1. 接入
-> 添加至app.json
-```javascript
-    "navigateToMiniProgramAppIdList":["wx74db71d8a9e3b699"]
-```
-> 微信小程序代码内跳转至授权页
-```javascript
-  wx.navigateToMiniProgram({
-    appId: 'wx74db71d8a9e3b699',
-    path: '/pages/bind/app',
-    extraData: {
-      appName: 'Bark Helper',    // 必填，修改为您当前小程序名称
-      openid: ''    // 必填，修改为当前用户的openid
-    },
-    envVersion: 'release',
-    success(res) {
-      // 打开成功
-    }
-  })
-```
-- 请填写真实有效的openid，以便于调用接口对指定用户发放。虚假的openid将导致信息发送错乱
+> iGot客户端是基于[iGot小程序](https://github.com/wahao/Bark-MP-helper)衍生的桌面客户端项目。您可以通过iGot轻松管理消息和您的推送方式。通过一行代码请求您就可以自定义向自己或项目组成员推送相关信息。
+>
 
-> 接收授权结果 <br />
-用户授权成功或失败后，Bark助手都将返回源小程序 <br />
-您需要在`App.onLaunch`或`App.onShow`监听来自`appId: 'wx74db71d8a9e3b699'`的`extraData`数据<br >
-数据格式为：<br />
-```javascript
-  "extraData":{
-    "key":"",   //app的授权key
-    "bind":true,   //绑定状态 Boolean
-    "errMsg":""   //错误信息 bind为false是会返回
-  }
-```
-建议在`App.onShow`内监听<br />
-```javascript
-  onShow(event){
-    if(event && event.referrerInfo && event.referrerInfo.appId === 'wx74db71d8a9e3b699'){
-      const _extraData = ( event && event.referrerInfo && event.referrerInfo.extraData ) || {}
-      if(_extraData.bind){
-        //绑定成功
-        console.log(_extraData.key)
-      }else{
-        //绑定失败
-        console.log(_extraData.errMsg)
-      }
-    }
-  }
-```
-当bind为true时，表示授权成功<br />
-#### 2. 推送消息
-> 暂不支持群发
-[服务端请求接口文档](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=服务端)
+## 帮助文档
 
-## 更新日志
-[CHANGELOG](https://wahao.github.io/Bark-MP-helper/#/zh-cn/?id=%e5%8d%87%e7%ba%a7%e6%97%a5%e5%bf%97)
-## 写在最后
-> 如果您有更多更好的意见或建议，可以通过提issue的方式告诉我。
-## 小程序推荐
-![Snap](https://github.com/wahao/Bark-MP-helper/blob/master/images/gh_72a49c29672c_344.jpg)<br>
-> Hacker密码： 一款采用对称加密、本地验证（加解密）的密码存储工具。
+[中文](https://wahao.github.io/Bark-MP-helper/#/zh-cn/) | [English](https://wahao.github.io/Bark-MP-helper/)
 
+
+## 使用
+
+> 微信小程序
+
+<img src="images/gh_38cb1ca0be75_344.jpg" alt="微信搜索“iGot”" width="200" />
+
+> 桌面客户端
+
+[下载](https://gitee.com/HellyW/Electron-iGot/releases)
+
+## 您可以用它来做
+
+- 短信转发
+- 服务器内存、CPU预警监控、 进程监听
+- 项目业务的预警
+- 内部服务提醒
+- .....
+
+
+> **SPECIAL THANKS TO | 特别感谢**
+> 
+> iGot基于以下项目提供的服务构建，
+>
+> [Bark](https://github.com/Finb/Bark) Bark is an iOS App which allows you to push customed notifications to your iPhone.
+>
+> [WxPusher](https://github.com/zjiecode/wxpusher-docs) WxPusher (微信推送服务)是一个使用微信公众号作为通道的，实时信息推送平台，你可以通过调用API的方式，把信息推送到微信上，无需安装额外的软件，即可做到信息实时通知。 你可以使用WxPusher来做服务器报警通知、抢课通知、抢票通知，信息更新提示等。
+>

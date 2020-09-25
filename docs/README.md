@@ -1,3 +1,5 @@
+!> This document is no longer maintained and updated
+
 # quick start :id=quick-start
 
 The applet aggregates APP, email, and WeChat, and one line of code is easily pushed. At the same time, support the ability to view historical push records, subscribe to third-party push, generate temporary push links, etc.<br>

@@ -2,9 +2,9 @@
 
 iGot是一款聚合APP、邮箱、微信等多种方式的第三方推送平台，您可以通过一行代码、一次请求简单实现消息推送。
 
-本文档面向普通用户、开发者分别进行介绍。如有疑惑，可通过文档结尾的[与我联系](#contactUs)方式进行反馈
+本文档面向普通用户、开发者分别进行介绍。如有疑惑，可通过文档结尾的[开放讨论](#contactUs)方式进行反馈
 
-# 👉 普通用户
+# 基本使用
 
 ## 微信小程序
 
@@ -108,6 +108,38 @@ https://push.hellyw.com/5e6e29038c2eec6f24b26408
 
 <img src="./images/WechatIMG2087.jpeg" style="width: 300px"/>
 
+## Electron-iGot(桌面客户端)
+
+> 文档正在整理中
+
+## utools插件版
+
+> 文档正在整理中
+
+## IOS快捷指令
+
+> 文档正在整理中
 
 
-# 👉 开发者
+# 进阶教程
+
+> 文档正在整理中
+
+
+# 开放平台
+
+> 文档正在整理中
+
+# 外部链接
+
+[另辟蹊径：离开模板消息，如何更优雅的向用户推送消息](https://developers.weixin.qq.com/community/develop/article/doc/000c06a47243a80aa7c8541e95b413)
+
+[「小众工具」打通的不止是手机和电脑的任督二脉](https://mp.weixin.qq.com/s?__biz=MzAwMjg3ODU0NA==&mid=2247483749&idx=1&sn=aed399bb2ac2db084b053b4dbfb49e4a&chksm=9ac2fc5aadb5754c6e7a98da0b29d01dc10bb16e186d7d635e174502046adc5fb1d365657d30&mpshare=1&scene=23&srcid=1023zNEjBacq16jFX2Siz9p0&sharer_sharetime=1603432811199&sharer_shareid=9893d5f0ec65c0f471abe86f0743e12b%23rd)
+
+# 开放讨论 :id=contactUs
+
+[github](https://github.com/wahao/Bark-MP-helper)
+
+[吐个槽](https://support.qq.com/products/111465)
+
+QQ群： 909540238

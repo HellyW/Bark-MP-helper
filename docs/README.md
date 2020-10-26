@@ -10,13 +10,13 @@ iGot是一款聚合APP、邮箱、微信等多种方式的第三方推送平台�
 
 ### 获取您的推送key
 
-* 获取微信小程序
+1. 获取微信小程序
 
 微信搜索“iGot” 或扫描下方小程序码<br>
 
 <img src="./images/gh_38cb1ca0be75_344.jpg" style="width: 300px"/>
 
-* 获取您的推送key
+2. 获取您的推送key
 
 进入接口，完成认证。点击上方复制按钮即可获取推送key
 
@@ -24,13 +24,13 @@ iGot是一款聚合APP、邮箱、微信等多种方式的第三方推送平台�
 
 ### 发送您的第一条消息
 
-主机地址：
+> 主机地址：
 
 ```
 https://push.hellyw.com
 ```
 
-请求path：
+> 请求path：
 
 ```
 GET
@@ -45,9 +45,9 @@ POST
 /:key
 ```
 
-请求参数：
+> 请求参数：
 
-```
+```javascript
 {
   "title": "请求标题",
   "content": "请求正文",
@@ -72,6 +72,9 @@ e.g:
 POST
 
 https://push.hellyw.com/5e6e29038c2eec6f24b26408
+
+```
+```json
 
 {
   "title" : "今日天气预测",

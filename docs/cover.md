@@ -5,11 +5,8 @@
 
 > 一款聚合消息推送管理工具
 
-* 基于微信小程序
-* 体积小，即用即走 (< 2M , 约600KB)
 * 多种推送方式 , 已支持Bark（ios），邮箱，微信
+* 支持桌面客户端（Windows & Mac）、utools、 微信小程序、 快捷指令
 
 [GitHub](https://github.com/wahao/Bark-MP-helper)
-[Get Started](#quick-start)
-[Mac 下载](#iGot-client)
-[windows 下载](#iGot-client)
+[桌面客户端 下载](https://gitee.com/HellyW/Electron-iGot/releases)

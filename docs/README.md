@@ -102,7 +102,7 @@ https://push.hellyw.com/5e6e29038c2eec6f24b26408
 
 那么您将收到如下的一条推送消息
 
-![收到推送](./images/WechatIMG2087.jpeg)
+<img src="./images/WechatIMG2087.jpeg" style="width: 300px"/>
 
 
 

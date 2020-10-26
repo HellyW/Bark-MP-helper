@@ -18,9 +18,11 @@ iGot是一款聚合APP、邮箱、微信等多种方式的第三方推送平台�
 
 2. 获取您的推送key
 
-进入接口，完成认证。点击上方复制按钮即可获取推送key
+进入接口，完成认证。点击上方复制按钮即可获取推送key 
 
 <img src="./images/WechatIMG2084.jpeg" style="width: 300px"/>
+
+!> 该推送key 为固定key。 认证申请后将无法进行更改。 如需分享，建议使用临时key。 详见[进阶教程 - 临时链接]
 
 ### 发送您的第一条消息
 
@@ -110,16 +112,49 @@ https://push.hellyw.com/5e6e29038c2eec6f24b26408
 
 ## Electron-iGot(桌面客户端)
 
-> 文档正在整理中
+Electron-iGot基于[iGot开放平台 - 客户端接口](#clientOpenApi)，在[Electron-iGot项目](https://github.com/wahao/Electron-iGot)内维护。可通过[国内gitee镜像](https://gitee.com/HellyW/Electron-iGot/releases)快速下载体验。
+
+!> 目前已支持的登录方式为授权码登录。
 
 ## utools插件版
 
 > 文档正在整理中
+### 安装utools
+
+下载地址 ： https://u.tools/download.html <br>
+
+说明文档 ： https://u.tools/docs/guide/about-uTools.html <br>
+
+### 安装插件
+
+呼出utools （ Option + Space 、 Alt + Space ）进入插件中心搜索”iGot“安装 <br>
+
+### 绑定iGot
+
+调出utools， 输入 bind:igot:XXX  回车
+
+!> 其中XXX为您获取的24位有效的推送key ； 使用该命令也可更新iGot推送key
+
+### 发送消息
+
+您可通过utools输入框完成发送，也可通过复制文本调起超级面板快捷发送
+
+<img src="./images/WX20201026-115321.png" style="width: 300px"/>
+
 
 ## IOS快捷指令
 
-> 文档正在整理中
+您需要先安装apple官方的快捷指令app
 
+### 安装快捷指令
+
+浏览器输入 `https://jiejinghe.com/shortcuts/9371959496` 按指引完成操作
+
+### 发送消息
+
+点开该快捷指令或是选择文字 > 共享 > iGot推送
+
+!> 关于iGot更多玩法可参考下方[外部链接](#shareHelpDocs)
 
 # 进阶教程
 
@@ -130,16 +165,24 @@ https://push.hellyw.com/5e6e29038c2eec6f24b26408
 
 > 文档正在整理中
 
-# 外部链接
+## 第三方授权使用
 
-[另辟蹊径：离开模板消息，如何更优雅的向用户推送消息](https://developers.weixin.qq.com/community/develop/article/doc/000c06a47243a80aa7c8541e95b413)
+> 文档正在整理中
 
-[「小众工具」打通的不止是手机和电脑的任督二脉](https://mp.weixin.qq.com/s?__biz=MzAwMjg3ODU0NA==&mid=2247483749&idx=1&sn=aed399bb2ac2db084b053b4dbfb49e4a&chksm=9ac2fc5aadb5754c6e7a98da0b29d01dc10bb16e186d7d635e174502046adc5fb1d365657d30&mpshare=1&scene=23&srcid=1023zNEjBacq16jFX2Siz9p0&sharer_sharetime=1603432811199&sharer_shareid=9893d5f0ec65c0f471abe86f0743e12b%23rd)
+## 客户端接口 :id=clientOpenApi
+
+> 文档正在整理中
+
+# 外部链接 :id=shareHelpDocs
+
+* [另辟蹊径：离开模板消息，如何更优雅的向用户推送消息](https://developers.weixin.qq.com/community/develop/article/doc/000c06a47243a80aa7c8541e95b413)
+
+* [「小众工具」打通的不止是手机和电脑的任督二脉](https://mp.weixin.qq.com/s?__biz=MzAwMjg3ODU0NA==&mid=2247483749&idx=1&sn=aed399bb2ac2db084b053b4dbfb49e4a&chksm=9ac2fc5aadb5754c6e7a98da0b29d01dc10bb16e186d7d635e174502046adc5fb1d365657d30&mpshare=1&scene=23&srcid=1023zNEjBacq16jFX2Siz9p0&sharer_sharetime=1603432811199&sharer_shareid=9893d5f0ec65c0f471abe86f0743e12b%23rd)
 
 # 开放讨论 :id=contactUs
 
-[github](https://github.com/wahao/Bark-MP-helper)
+[GITHUB](https://github.com/wahao/Bark-MP-helper)
 
-[吐个槽](https://support.qq.com/products/111465)
+[社区](https://support.qq.com/products/111465)
 
 QQ群： 909540238

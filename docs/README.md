@@ -171,6 +171,10 @@ Electron-iGot基于[iGot开放平台 - 客户端接口](#clientOpenApi)，在[El
 
 !> 接入仅前端引导方式不同，服务端接口通用。
 
+目前可通过微信小程序“Hacker密码”体验完整的授权逻辑。
+
+<img src="./images/gh_72a49c29672c_430.jpg" style="width: 300px"/>
+
 ### 微信小程序
 
 1. 授权允许跳转

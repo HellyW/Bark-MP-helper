@@ -14,7 +14,7 @@ iGot是一款聚合APP、邮箱、微信等多种方式的第三方推送平台�
 
 微信搜索“iGot” 或扫描下方小程序码<br>
 
-<img src="./images/gh_38cb1ca0be75_344.jpeg" style="width: 300px"/>
+<img src="./images/gh_38cb1ca0be75_344.jpg" style="width: 300px"/>
 
 * 获取您的推送key
 

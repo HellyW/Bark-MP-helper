@@ -185,7 +185,7 @@ Electron-iGot基于[iGot开放平台 - 客户端接口](#clientOpenApi)，在[El
 
 ### 绑定iGot
 
-调出utools， 输入 bind:igot:XXX  回车
+调出utools， 输入 `bind:igot:XXX`  回车
 
 !> 其中XXX为您获取的24位有效的推送key ； 使用该命令也可更新iGot推送key
 

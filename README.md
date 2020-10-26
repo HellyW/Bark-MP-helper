@@ -11,13 +11,22 @@
 
 ## 使用
 
-> 微信小程序
+ 微信小程序
 
-<img src="images/gh_38cb1ca0be75_344.jpg" alt="微信搜索“iGot”" width="200" />
+<img src="images/gh_38cb1ca0be75_430.jpg" alt="微信搜索“iGot”" width="200" />
 
-> 桌面客户端
+ 桌面客户端
 
 [下载](https://gitee.com/HellyW/Electron-iGot/releases)
+
+ IOS快捷指令
+
+[下载](https://jiejinghe.com/shortcuts/9371959496)
+
+ utools插件
+
+> 下载utools，并搜索“iGot”
+
 
 ## 您可以用它来做
 

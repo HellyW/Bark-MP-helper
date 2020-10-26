@@ -6,8 +6,7 @@
 
 ## 帮助文档
 
-[中文](https://wahao.github.io/Bark-MP-helper/#/zh-cn/) | [English](https://wahao.github.io/Bark-MP-helper/)
-
+[中文](https://wahao.github.io/Bark-MP-helper/)
 
 ## 使用
 
